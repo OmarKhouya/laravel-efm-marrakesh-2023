@@ -1,0 +1,17 @@
+1)
+    php artisan make:model Eleve -m
+    php artisan make:model Activité -m
+    php artisan make:model Club -m
+4)
+    php artisan make:seeder EleveSeeder
+    php artisan make:seeder ActiviteSeeder
+    php artisan make:seeder ClubSeeder
+5)
+    php artisan migrate
+    php artisan db:seed --class=EleveSeeder
+    php artisan db:seed --class=ActiviteSeeder
+    php artisan db:seed --class=ClubSeeder
+6)
+    php artisan make:controller EleveController --resource
+    php artisan make:controller ActiviteController --resource
+    php artisan make:controller ClubController --resource
